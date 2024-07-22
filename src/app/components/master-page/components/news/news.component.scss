@@ -1,0 +1,49 @@
+@import "../../shared/styles/shared.scss";
+
+.news {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+
+  .new {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+
+    .new-info {
+      display: flex;
+      gap: 16px;
+
+      > img {
+        width: 240px;
+        object-fit: cover;
+        border-radius: 8px;
+        object-position: center;
+      }
+
+      h5 {
+        text-align: justify;
+        font-weight: 300;
+      }
+
+      @media (max-width: $--mq-tablet) {
+        flex-flow: column;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    h3 {
+      border-bottom: 1px solid #757575;
+      color: #757575;
+      cursor: pointer;
+    }
+  }
+}

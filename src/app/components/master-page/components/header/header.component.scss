@@ -1,0 +1,25 @@
+@import "../../shared/styles/shared.scss";
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 5;  
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  > .header-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8px;
+
+    > .header-nav-logo {
+      height: 96px;
+    }
+
+    > .header-nav-anchor {
+      font-size: 14px;
+      text-decoration: none;
+    }
+  }
+}
