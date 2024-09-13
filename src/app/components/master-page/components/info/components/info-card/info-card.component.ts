@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -6,8 +6,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './info-card.component.html',
-  styleUrls: ['./info-card.component.scss']
+  styleUrls: ['./info-card.component.scss'],
 })
 export class InfoCardComponent {
-  @Input() public
+  @Input({ required: true }) public title!: string;
 }

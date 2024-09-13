@@ -1,0 +1,10 @@
+@import "../../../../shared/styles/shared.scss";
+
+.info-card {
+
+  .info-card-title {
+    color: $pt-color-yellow;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $pt-color-yellow;
+  }
+}
