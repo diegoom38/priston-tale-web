@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpriston_tale_web=self.webpackChunkpriston_tale_web||[]).push([[539],{1539:(l,s,n)=>{n.r(s),n.d(s,{default:()=>t});const t=[{path:"",loadComponent:()=>Promise.resolve().then(n.bind(n,4244))}]}}]);
