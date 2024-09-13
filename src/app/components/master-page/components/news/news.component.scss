@@ -1,15 +1,20 @@
 @import "../../shared/styles/shared.scss";
 
 .news {
-  padding: 48px;
   display: flex;
   flex-direction: column;
+  gap: 24px;
 
   .new {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: 12px;
+    cursor: pointer;
+    transition: .5s;
+    
+    &:hover {
+      scale: 102%;
+    }
 
     .new-info {
       display: flex;
@@ -19,7 +24,7 @@
         width: 240px;
         object-fit: cover;
         border-radius: 8px;
-        object-position: center;
+        object-position: right;
       }
 
       h5 {

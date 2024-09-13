@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NewsComponent } from './components/news/news.component';
 import { CharactersComponent } from './components/characters/characters.component';
 import { MainCarouselComponent } from './components/main-carousel/main-carousel.component';
+import { InfoComponent } from "./components/info/info.component";
 
 @Component({
   selector: 'app-master-page',
@@ -15,7 +16,8 @@ import { MainCarouselComponent } from './components/main-carousel/main-carousel.
     CharactersComponent,
     MainCarouselComponent,
     MainCarouselComponent,
-  ],
+    InfoComponent
+],
   templateUrl: './master-page.component.html',
   styleUrls: ['./master-page.component.scss'],
 })
