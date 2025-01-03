@@ -1,9 +1,13 @@
 @import "../../shared/styles/shared.scss";
 
 .news {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+
+  @media (max-width: $--mq-tablet) {
+    grid-template-columns: 1fr;
+  }
 
   .new {
     display: flex;
@@ -11,33 +15,32 @@
     gap: 8px;
     cursor: pointer;
     transition: .5s;
+    padding: 16px;
+    background: $pt-color-background-gray;
+    border-radius: 8px;
+    height: 500px;
     
     &:hover {
       scale: 102%;
     }
 
     .new-info {
-      display: flex;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      overflow: hidden;
       gap: 16px;
 
       > img {
-        width: 240px;
+        width: 100%;
+        max-height: 180px;
         object-fit: cover;
         border-radius: 8px;
         object-position: right;
       }
 
       h5 {
-        text-align: justify;
-        font-weight: 300;
-      }
-
-      @media (max-width: $--mq-tablet) {
-        flex-flow: column;
-
-        img {
-          width: 100%;
-        }
+        overflow: auto;
+        padding-right: 8px;
       }
     }
 

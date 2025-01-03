@@ -15,7 +15,6 @@ import { InfoComponent } from "./components/info/info.component";
     NewsComponent,
     CharactersComponent,
     MainCarouselComponent,
-    MainCarouselComponent,
     InfoComponent
 ],
   templateUrl: './master-page.component.html',

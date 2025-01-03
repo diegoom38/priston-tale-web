@@ -1,0 +1,11 @@
+<div *ngFor="let block of data?.htmlBlocks">
+  <ng-container [ngSwitch]="block.type">
+    <ng-container *ngSwitchCase="'Image'">
+      <img [src]="block.content">
+    </ng-container>
+
+    <ng-container *ngSwitchCase="'Text'">
+      <h5 [innerHTML]="block.content"></h5>
+    </ng-container>
+  </ng-container>
+</div>
